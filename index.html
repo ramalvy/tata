@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selamat malam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eb83cc;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            
+        }
+        .card {
+            background-color: #ffffff;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            padding: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px 15px 0 0;
+        }
+        .card h1 {
+            color: #e45eb7;
+            margin: 20px 0 10px;
+            font-size: 24px;
+        }
+        .card p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #d53a47;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        } 
+        .button:hover {
+            background-color: #b3303b;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1></h1>
+        <p>
+            sayang, aku ngga pernah cape buat bilang kalo kamu itu segalany buat aku. kamu tau ngga, tiap kali 
+            aku lihat senyum kamu, semua cape dan masalah aku rasany langsung hilang. kamu itu alasan kenapa aku 
+            kuat jalanin hari hari, kenapa aku semangat meski dunia kadang ngga ramah. aku ngga butuh apa apa lagi 
+            selain kamu. pelukan kamu udah cukup buat bikin aku ngerasa jadi orang paling beruntung di dunia. walaupun
+            pelukan dari jauh. aku memang manja banget sama kamu, tapi itu karena aku nyaman. aku pengen kamu tau, 
+            aku butuh kamu bukan cuma pas aku senang, tapi juga pas aku lemah, pas aku lagi hancur, pas aku butuh 
+            seseorang buat sekadar bilang "ngga apa apa, aku di sini". aku tau, kadang kamu suka cape, suka ngerasa 
+            berat ngejalanin semua sendiri. tapi aku mau kamu percaya satu hal, kamu itu kuat, bahkan lebih kuat dari 
+            yang kamu pikir. dan di samping semua kekuatan itu, kamu ngga sendirian. ada aku di sini yang siap nemenin 
+            kamu, dukung kamu, dan jadi sandaran kamu kapan pun kamu butuh. kalo dunia di luar sana bikin kamu lelah, 
+            biarlah aku yang jadi tempat kamu istirahat. kalo orang orang lain bikin kamu ragu, biarlah aku yang terus 
+            yakinin kamu kalo kamu itu berharga, istimewa, dan layak dicintai sepenuhny. aku ngga janji bisa nyelesaiin 
+            semua masalahmu, tapi aku janji ngga akan pernah ninggalin kamu. aku akan selalu ada, 
+            entah dalam tawa, tangis, bahagia, ataupun luka. karena buat aku, kamu bukan cuma seseorang yang hadir lalu pergi. 
+            kamu adalah rumah. dan rumah itu ngga pernah aku cari lagi ke mana mana, karena aku sudah menemukanny di 
+            dirimu
+        </p>
+    </div>
+<audio autoplay loop>
+    <source src="audio/aaa.mp3" type=" audio/mpeg" />
+  </audio>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const audio = document.querySelector("audio");
+      const userInteraction = () => {
+        audio.play();
+        document.removeEventListener("click", userInteraction);
+      };
+      document.addEventListener("click", userInteraction);
+    });
+  </script>
+</body>
+</html> 
